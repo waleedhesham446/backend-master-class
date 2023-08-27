@@ -1,0 +1,9 @@
+cost = decides the number of key expansion rounds or iterations of the algorithm
+
+Bcrypt generates a random salt to be used in those iterations to protect against the rainbow table attack
+
+Becaus eof this random salt, the algorithm will give you a completely different output hash value even if the same input password is provided
+
+The cost and hash will also be added to the final hash to produce the final hash string
+
+Hashed_String = ALG + COST + SALT + HASH
